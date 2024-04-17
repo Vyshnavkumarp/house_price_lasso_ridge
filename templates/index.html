@@ -22,6 +22,35 @@
             </form>
             <p> House Price using Lasso: {{data_lasso}}</p>
             <p> House Price using Ridge: {{data_ridge}}</p>
+            <h2>Comparison of Regression Metrics</h2>
+            <table>
+              <tr>
+                <th>Metrics</th>
+                <th>Lasso Regression</th>
+                <th>Ridge Regression</th>
+              </tr>
+              <tr>
+                <td>Mean Squared Error (MSE)</td>
+                <td>{{mse_lasso}}</td>
+                <td>{{mse_ridge}}</td>
+              </tr>
+              <tr>
+                <td>Root Mean Squared Error (RMSE)</td>
+                <td>{{rmse_lasso}}</td>
+                <td>{{rmse_ridge}}</td>
+              </tr>
+              <tr>
+                <td>Mean Absolute Error (MAE)</td>
+                <td>{{mae_lasso}}</td>
+                <td>{{mae_ridge}}</td>
+              </tr>
+              <tr>
+                <td>R² Score</td>
+                <td>{{r2_lasso}}</td>
+                <td>{{r2_ridge}}</td>
+              </tr>
+            </table>
+            
         </div>
 
     </div>
